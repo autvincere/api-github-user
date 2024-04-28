@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    padding: 16px;
+    border-radius: 3px;
+}
+.container_texts {
+    padding: 16px;
+    text-align: center;
+    background: linear-gradient(to right, rgb(133 67 99), rgb(136 42 161));
+    font-weight: bold;
+    border-radius: 8px;
+}
+a {
+    color: var(--color-primary-fonts);
+}
