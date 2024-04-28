@@ -1,4 +1,4 @@
-# Visualizador
+# Visualizador de usuarios
 
 Este proyecto sirve para visualizar los usuarios de github. La Data es obtenida mediante el consumo de Api.
 
@@ -7,7 +7,7 @@ La API utilizada es proporcionada por :
 
 
 ## Versión desplegada 😎
-[Click aquí](https://autvincere.github.io/api-github-user/) - deploy en Github pages.
+[Click aquí](https://api-github-user-wheat.vercel.app/) - deploy en Vercel.
 
 
 ## Comenzando 🚀
@@ -21,7 +21,13 @@ git clone https://github.com/autvincere/api-github-user.git
 
 ## Instalación 🔧
 
-_Para correr este proyecto necesitaras una serie de paquetes npm, ademas de los usuales ocupados por el entorno de React js, los cuales son:_
+**Importante**: Asegúrate de que tu versión de Node.js sea al menos la **v18.19.0** antes de proceder con la instalación de los paquetes.
+Esta versión o superior es necesaria para asegurar la compatibilidad con las dependencias que serán instaladas. Verifica tu versión actual con `node --version`.
+
+Si tu versión de Node.js es anterior, visita [Node.js Official Website](https://nodejs.org/) para actualizarla.
+
+
+Para correr este proyecto necesitaras una serie de paquetes npm, ademas de los usuales ocupados por el entorno de React js, los cuales son:
 
 
 ```
@@ -49,7 +55,7 @@ npm run build
 
 ## Construido con 🛠️
 
-* [React](https://reactjs.org/) - Libreria ocupada
+* [React](https://reactjs.org/) - Libreria utilizada
 * [NPM](https://www.npmjs.com/) - Manejador de dependencias
 
 
