@@ -12,24 +12,22 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
-    width: 100%;
+    
+    --color-primary-lines: #616161;
+    --color-primary-fonts: #ffffff;
 }
+#root{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    height: 100vh;
 
+}
 body {
     margin: 0;
-    display: flex;
-    place-items: center;
+    place-items: self-start;
     min-width: 320px;
     min-height: 100vh;
-    padding: 16px;
     box-sizing: border-box;
 }
-#root {
-    width: 100%;
-}
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-} */

@@ -1,0 +1,67 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+}
+.container__input {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+    flex-direction: row;
+    padding: 16px;
+    border-radius: 3px;
+    border-color: transparent;
+    background: linear-gradient(to right, rgb(97, 67, 133), rgb(42 43 161));
+}
+.container__input_button {
+    display: flex;
+}
+h1 {
+    color: white;
+    font-size: 3em;
+}
+header {
+    width: 100%;
+    justify-content: center;
+    background-image: url("https://github.githubassets.com/assets/hero-desktop-a38b0fd77b6c.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+label {
+    font-weight: 600;
+}
+input {
+    padding: 12px;
+    outline: none;
+    border: none;
+    background: white;
+    color: #1c1c1c;
+}
+button {
+    color: #fff;
+    background: #a73cff;
+    border: 0px;
+    width: 81px;
+    font-weight: bolder;
+}
+button:hover {
+    background: #8029c8;
+}
+button:enabled {
+    cursor: pointer;
+}
+button:disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+    background-color: gray;
+    color: white;
+}
