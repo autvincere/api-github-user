@@ -44,8 +44,8 @@ function App() {
             setUser(null);
             setError({
                 documentation_url:
-                    error.documentation_url || "URL no disponible",
-                message: error.message || "Error desconocido",
+                    (error as IError).documentation_url || "URL no disponible",
+                message: (error as IError).message || "Error desconocido",
             });
         } finally {
             setLoading(false);
@@ -61,7 +61,11 @@ function App() {
             const repos = await response.json();
             if (!response.ok) {
                 setRepos([]);
-                throw new Error(repos.message || "Failed to fetch repos");
+                throw {
+                    message: `${repos.message}`,
+                    documentation_url:
+                        repos.documentation_url || "URL no disponible",
+                };
             }
             setRepos(repos);
             setError(null);
@@ -69,8 +73,8 @@ function App() {
             setRepos([]);
             setError({
                 documentation_url:
-                    error.documentation_url || "URL no disponible",
-                message: error.message || "Error desconocido",
+                    (error as IError).documentation_url || "URL no disponible",
+                message: (error as IError).message || "Error desconocido",
             });
         } finally {
             setLoadingRepos(false);

@@ -1,3 +1,5 @@
+import { ChangeEvent } from "react";
+
 export interface IError {
     documentation_url: string;
     message: string;
@@ -149,10 +151,12 @@ export interface IGitHubRepository {
 
 export interface IHeaderProps {
     query: string;
-    handleInput: () => void;
+    // eslint-disable-next-line no-unused-vars
+    handleInput: (e: ChangeEvent<HTMLInputElement>) => void;
     // eslint-disable-next-line no-unused-vars
     fetchUser: (query: string) => void;
 }
+
 export interface IGitHubUserProps {
     user: IGitHubUser | null;
     repos: IGitHubRepository[];
